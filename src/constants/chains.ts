@@ -23,6 +23,7 @@ export enum SupportedChainId {
   BNB = 56,
 
   BASE = 8453,
+  MONAD_TESTNET = 10143,
 }
 
 export enum ChainName {
@@ -41,6 +42,7 @@ export enum ChainName {
   CELO_ALFAJORES = 'celo-alfajores',
   BNB = 'bnb',
   BASE = 'base',
+  MONAD_TESTNET = 'monad-testnet',
 }
 
 export const CHAIN_NAMES_TO_IDS: { [chainName: string]: SupportedChainId } = {
@@ -59,6 +61,7 @@ export const CHAIN_NAMES_TO_IDS: { [chainName: string]: SupportedChainId } = {
   [ChainName.CELO_ALFAJORES]: SupportedChainId.CELO_ALFAJORES,
   [ChainName.BNB]: SupportedChainId.BNB,
   [ChainName.BASE]: SupportedChainId.BASE,
+  [ChainName.MONAD_TESTNET]: SupportedChainId.MONAD_TESTNET,
 }
 
 /**
@@ -91,6 +94,7 @@ export const L1_CHAIN_IDS = [
   SupportedChainId.POLYGON_MUMBAI,
   SupportedChainId.CELO,
   SupportedChainId.CELO_ALFAJORES,
+  SupportedChainId.MONAD_TESTNET,
 ] as const
 
 export type SupportedL1ChainId = typeof L1_CHAIN_IDS[number]
